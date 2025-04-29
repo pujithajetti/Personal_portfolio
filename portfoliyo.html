@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pujitha Jetti - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a192f;
+      color: #ccd6f6;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background-color: #232830;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #64ffda;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #8892b0;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #0a192f;
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #64ffda;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #112240;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    section h2 {
+      color: #64ffda;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #233554;
+      padding-bottom: 10px;
+    }
+    .contact-info p,
+    ul li,
+    table td, table th {
+      font-size: 1rem;
+      color: #a8b2d1;
+    }
+    a {
+      color: #64ffda;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table th, table td {
+      border: 1px solid #233554;
+      padding: 12px;
+      text-align: left;
+    }
+    table th {
+      background-color: #233554;
+      color: #64ffda;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    form label {
+      margin: 10px 0 5px;
+      font-weight: 600;
+      color: #ccd6f6;
+    }
+    form input, form textarea {
+      padding: 12px;
+      font-size: 1rem;
+      background-color: #0a192f;
+      border: 1px solid #233554;
+      border-radius: 6px;
+      color: #ffffff;
+    }
+    form input:focus, form textarea:focus {
+      border-color: #64ffda;
+      outline: none;
+    }
+    form button {
+      background-color: #64ffda;
+      color: #0a192f;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #d2189e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pujitha Jetti</h1>
+    <p>AI/ML Enthusiast | Developer | Lifelong Learner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> pujithajetty2005@gmail.com</p>
+      <p><strong>Phone:</strong> +91 7386933993</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pujitha-j-2973a4276" target="_blank">linkedin.com/in/pujitha-j</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/pujithajetti" target="_blank">github.com/pujithajetti</a></p>
+    </div>
+    <p>I am a highly motivated 3rd year Computer Science Engineering (AIML) student with a strong foundation in programming, problem-solving, and predictive modeling. I am passionate about building real-world applications and growing through collaboration and hands-on learning.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Qualification</th>
+          <th>Year</th>
+          <th>Institution</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B.Tech (CSE - AIML)</td>
+          <td>Expected 2026</td>
+          <td>Narasaraopeta Engineering College</td>
+          <td>87%</td>
+        </tr>
+        <tr>
+          <td>Intermediate (MPC)</td>
+          <td>2022</td>
+          <td>NRI Vidya Junior College</td>
+          <td>96.1%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Certifications</h2>
+    <ul>
+      <li><strong>Languages:</strong> C, Python, HTML, CSS</li>
+      <li><strong>Tools:</strong> Git, GitHub, Google Colab, VS Code</li>
+      <li><strong>Certifications:</strong> Generative AI (Microsoft), AI (IBM), Python, NoSQL, Agile, MySQL (Great Learning),NPTEL certifications(introduction to joy of computing using python,iot,data science for engineers)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Electricity Demand & Price Forecasting (Infosys Internship):</strong> LSTM-based predictive model using Pandas & NumPy (96.74% accuracy). <a href="https://github.com/pujithajetti/pujitha_jetti_electricity-demand-and-price-forecasting" target="_blank">View Project</a></li>
+      <li><strong>Multiple Disease Prediction System (AICTE Internship):</strong> Machine learning model applied to diverse datasets. <a href="https://github.com/pujithajetti/public_ml_web_app" target="_blank">View Project</a></li>
+      <li><strong>Heart Disease Prediction(Mini Project):</strong> Logistic regression model with data preprocessing, feature selection, and visualization. <a href="https://github.com/pujithajetti/Heart_disease_prediction" target="_blank">View Project</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+</body>
+</html>
