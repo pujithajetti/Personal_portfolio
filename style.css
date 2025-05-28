@@ -1,4 +1,4 @@
-/* Base reset */
+
 body
  {
   margin: 0;
@@ -7,7 +7,7 @@ body
   color: #333;
 }
 
-/* Toggle button (hamburger) */
+
 #toggle {
   display: none;
 }
@@ -26,44 +26,39 @@ body
   border-radius: 4px;
 }
 
-/* Sidebar */
+
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 180px; /* Increased width */
+  width: 180px; 
   height: 100vh;
   background: #333;
   color: white;
-  padding: 30px 20px; /* More padding for spacing */
+  padding: 30px 20px;
   transition: transform 0.3s ease-in-out;
   align-items: center;
   z-index: 10;
 }
-
 .sidebar h2 {
   margin-top: 3rem; 
-  margin-bottom: 2rem; /* Increased spacing */
-  font-size: 1.8rem; /* Larger title font */
+  margin-bottom: 2rem; 
+  font-size: 1.8rem; 
 }
-
 .sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .sidebar ul li {
-  margin: 25px 0; /* More vertical space between links */
+  margin: 25px 0; 
 }
-
 .sidebar ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.25rem; /* Larger font size for links */
+  font-size: 1.25rem; 
   font-weight: 400;
 }
-
 .sidebar ul li a:hover {
   text-decoration: underline;
 }
@@ -83,6 +78,7 @@ body
   }
 }
 
+
 /* Main content */
 .main {
   margin-left: 220px;
@@ -91,8 +87,7 @@ body
 section {
   margin-bottom: 60px;
 } 
- /* Section headings */
- .welcome-text {
+.welcome-text {
   padding-top: 3rem; 
   text-align: center;
   margin: 20px 0 50px;
@@ -150,14 +145,22 @@ section {
 }
 
  
-  /* About Section */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify; 
+}
+@media (max-width: 480px) {
   .about-text {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #555;
+    font-size: 1rem;
+    padding: 0 15px;
   }
+}
+
 
   
 /* education section */
@@ -168,7 +171,6 @@ section {
   padding: 60px 20px;
   background: url('your-background-image.jpg') no-repeat center center/cover; /* optional */
 }
-
 .education-content {
   background-color: #f1f7ff;
   padding: 30px 40px;
@@ -177,7 +179,6 @@ section {
   width: 100%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-
 .education-content h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -185,66 +186,56 @@ section {
   color:#3d1e9a;
   margin-bottom:20px;
 }
-
-
 .education-card {
   margin-bottom: 30px;
   text-align: left;
 }
-
 .edu-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .edu-header h3 {
-  color: #4A00E0;
+  color: #0077cc;
   font-size: 18px;
   margin: 0;
 }
-
 .edu-year {
   font-weight: 500;
   color: #333;
   font-size: 16px;
 }
-
 .education-card p {
   font-size: 16px;
   color: #333;
   margin: 4px 0;
 }
 
-  
-/* Skills Section */
+ 
 
- /* Main content wrapper */
+/* Skills Section */
 .main {
-  margin-left: 220px; /* Matches sidebar width */
+  margin-left: 220px;
   padding: 50px;
   position: relative;
-  z-index: 1; /* Makes sure it's above background */
+  z-index: 1; 
 }
 .skills-section {
   padding: 60px 30px;
-  max-width: 1100px; /* reduced from 1400px */
+  max-width: 1100px; 
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-/* Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* increased min width */
-  gap: 2rem; /* more spacing between cards */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 2rem; 
   padding: 0 10px;
-  justify-items: center; /* center cards inside grid columns */
+  justify-items: center; 
 }
-/* Skill Card */
 .skill-category {
   width: 100%;
-  max-width: 300px; /* limits the width of individual cards */
+  max-width: 300px; 
   background: #f1f7ff;
   padding: 2rem;
   border-radius: 10px;
@@ -280,10 +271,6 @@ section {
   min-width: 40px;
   text-align: center;
 }
-
-
-
-/* Icon Colors */
 .html-icon { color: #e34c26; }
 .css-icon { color: #264de4; }
 .js-icon { color: #f0db4f; }
@@ -295,7 +282,7 @@ section {
 .vscode-icon { color: #007ACC; }
 
 
-/* Certifications Section Wrapper */
+
 .certifications-section {
   margin-left: 260px;
   padding: 100px 20px 60px 20px;
@@ -305,19 +292,15 @@ section {
   overflow-x: hidden;
   box-sizing: border-box;
 }
-
-/* Certifications Grid */
 .certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
-  padding-left: 100px; /* 👈 Add left padding to shift away from sidebar */
-  padding-right: 10px; /* Optional: Less padding on right if needed */
+  padding-left: 100px; 
+  padding-right: 10px; 
 }
-
-/* Certificate Card */
 .certificate-card {
   background: #f1f7ff;
   padding: 18px;
@@ -328,41 +311,34 @@ section {
   max-width: 320px;
   margin: 0 auto;
 }
-
 .certificate-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
-
 .certificate-card img {
   width: 100%;
   max-height: 420px;
   object-fit: cover;
   border-radius: 8px;
 }
-
 .certificate-card h3 {
   margin-top: 15px;
   font-size: 1rem;
   color: #333;
   font-weight: 600;
 }
-
-/* Responsive Adjustments */
 @media screen and (max-width: 768px) {
   .certifications-section {
     margin-left: 20;
     width: 100%;
     padding: 80px 10px 40px 10px;
   }
-
-  .certificates-grid {
+.certificates-grid {
     grid-template-columns: 2fr;
-    padding-left: 50px; /* Remove added padding for mobile view */
+    padding-left: 50px; 
     padding-right: 0px;
   }
-
-  .certificate-card img {
+.certificate-card img {
     max-height: 360px;
   }
 }
@@ -419,8 +395,6 @@ section {
   text-align: center;
   background: transparent;
 }
-
-/* White box container only around content */
 .resume-container {
   background-color: #f1f7ff;
   padding: 40px 30px;
@@ -429,23 +403,17 @@ section {
   max-width: 700px;
   margin: 0 auto;
 }
-
-/* Heading style */
 .resume-container .welcome-text {
   font-size: 2.5rem;
   font-weight: 700;
   color: #3d1e9a;
   margin-bottom: 20px;
 }
-
-/* Paragraph under heading */
 .resume-container p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 30px;
 }
-
-/* Flex container for buttons */
 .resume-buttons {
   display: flex;
   justify-content: center;
@@ -453,7 +421,7 @@ section {
   flex-wrap: wrap;
 }
 
-/* Common button style */
+
 .btn {
   padding: 12px 24px;
   background-color: #007bff;
@@ -463,12 +431,9 @@ section {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 .btn:hover {
   background-color: #0056b3;
 }
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .resume-section .welcome-text {
     font-size: 2rem;
@@ -485,16 +450,14 @@ section {
 
  /* Contact Form Section */
  .contact-section {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: center;
 }
-
 .contact-section h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #091f89;
 }
-
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -502,7 +465,6 @@ section {
   flex-direction: column;
   gap: 20px;
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -523,7 +485,6 @@ section {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .contact-form button:hover {
   background-color: #0056b3;
 }
@@ -552,7 +513,7 @@ section {
 
 .main-footer {
   width: 100%;
-  background-color: #2c2c2c; /* Same as navbar color */
+  background-color: #2c2c2c; 
   color: #ffffff;
   text-align: center;
   padding: 30px 0;
